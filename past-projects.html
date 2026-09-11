@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Past Projects — Engineering Notebook</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="index.html">ATB<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="wet-invention.html">WET Invention</a></li>
+        <li><a href="capstone.html">Capstone</a></li>
+        <li><a href="past-projects.html" aria-current="page">Past Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="band">
+    <div class="band-inner reveal">
+      <p class="eyebrow">Digital Engineering Notebook</p>
+      <h1 class="display" style="font-size:clamp(2rem,6vw,3.6rem);">Past Projects</h1>
+    </div>
+  </section>
+
+  <section class="band band--tint">
+    <div class="band-inner">
+      <div class="section-head reveal">
+        <div class="section-head__label">
+          <span class="section-head__mark"></span>
+          <p class="eyebrow">Research</p>
+        </div>
+        <p class="section-head__desc">Independent work outside of class.</p>
+      </div>
+
+      <div class="card reveal" style="max-width:70ch;">
+        <p class="blog-meta">Independent Research &middot; August 2026</p>
+        <h3 style="margin-top:0;">What Determines Noise Robustness in Symbolic Regression?</h3>
+        <p style="color:var(--ink-soft); margin-bottom:16px;">
+          A controlled study testing how well symbolic regression (using PySR) can rediscover
+          physical laws &mdash; like Hooke's law or Coulomb's law &mdash; from noisy data. Across
+          roughly 6,000 runs on 17 physical laws, the original hypothesis (that recovery depends
+          on how structurally complex an equation is) didn't hold up. Instead, the biggest factor
+          turned out to be whether the equation requires fitting a numeric constant at all &mdash;
+          constant-free equations stayed almost perfectly recoverable even at high noise, while
+          constant-bearing ones degraded sharply. Noise tolerance also scaled substantially with
+          how much data was available, meaning a law that looks fragile at a small sample size can
+          be robust at a larger one.
+        </p>
+        <div class="tag-row" style="margin-bottom:20px;">
+          <span class="tag">Python</span>
+          <span class="tag">PySR</span>
+          <span class="tag">Statistics</span>
+          <span class="tag">Independent Research</span>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn" href="assets/docs/symbolic-regression-noise.pdf" target="_blank" rel="noopener">Read the Paper (PDF)</a>
+          <a class="btn" href="https://github.com/lbozo1248-droid/Symbolic_Regression_Noise" target="_blank" rel="noopener">View Code (GitHub)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <p class="footer-brand">Ashton Tovar Burke</p>
+        <p>Digital engineering notebook for the capstone class &mdash; mechanical engineering pathway, Santa Monica High School.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="wet-invention.html">WET Invention</a></li>
+          <li><a href="capstone.html">Capstone</a></li>
+          <li><a href="past-projects.html">Past Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:lbozo1248@gmail.com">lbozo1248@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ashton Tovar Burke</span>
+      <span>Last updated September 2026</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
